@@ -18,11 +18,11 @@ $(function() {
           }
           p.translate(p.width / 2, p.height / 2);
 
-          let new_n_x = GLOBAL_POSES[0].keypoints[1].x
-          let new_n_y = GLOBAL_POSES[0].keypoints[1].y
+          let new_n_x = GLOBAL_POSES[0].keypoints[5].x
+          let new_n_y = GLOBAL_POSES[0].keypoints[5].y
 
-          let new_n_x2 = GLOBAL_POSES[0].keypoints[2].x
-          let new_n_y2 = GLOBAL_POSES[0].keypoints[2].y
+          let new_n_x2 = GLOBAL_POSES[0].keypoints[7].x
+          let new_n_y2 = GLOBAL_POSES[0].keypoints[7].y
 
 
           if (new_n_x > 0 && new_n_x < p.width && new_n_y > 0 && new_n_y < p.height) {
