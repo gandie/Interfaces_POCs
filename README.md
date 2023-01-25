@@ -2,7 +2,7 @@
 
 Small code pieces showing how "Interfaces" might work
 
-## First example
+## First example - index.html
 
 Feed motion capturing data into some very simple p5 sketches and run captured video in "parallel".
 
@@ -61,3 +61,16 @@ This POC shows that JSON motion capturing data can be handled very easily in bot
 frontend. Maybe JSON should be the preferred output format of the motion capturing systems we
 have in mind? Transforming data into JSON will be a task for the backend anyway i guess, but
 receiving JSON directly will probably be easier and faster.
+
+## Second example - index_tf_live.html
+
+Live motion capturing via tensorflow-js and pose-detection package.
+
+Run premade example simply be opening `index_tf_live.html` locally in your browser of trust and allow camera usage.
+
+Toolchain exaplanation TBD, cooking this into static page via `yarn` was quite tedious. Fechting the pose data into p5js is done in a similar hacky way to the first example, this example can be improved to be a full-flesehd motion capturing recorder.
+
+Links:
+
+- https://github.com/tensorflow/tfjs-models
+- https://github.com/tensorflow/tfjs-models/tree/master/pose-detection/demos#live-camera-demo
