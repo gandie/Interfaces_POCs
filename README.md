@@ -67,6 +67,8 @@ receiving JSON directly will probably be easier and faster.
 Live motion capturing via tensorflow-js and pose-detection package.
 
 Run premade example simply be opening `index_tf_live.html` locally in your browser of trust and allow camera usage.
+Add `?model=blazepose` to the URL in your browser as the alert message tells you to. Check documentation links
+below for other models available.
 
 This example show that cheap motion capturing can be done ai-driven in the brwoser! One model available,
 `blazepose` is even capable of calculating z-axis information, allowing 3D rendering of these skeletons.
