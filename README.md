@@ -68,9 +68,26 @@ Live motion capturing via tensorflow-js and pose-detection package.
 
 Run premade example simply be opening `index_tf_live.html` locally in your browser of trust and allow camera usage.
 
-Toolchain exaplanation TBD, cooking this into static page via `yarn` was quite tedious. Fechting the pose data into p5js is done in a similar hacky way to the first example, this example can be improved to be a full-flesehd motion capturing recorder.
+This example show that cheap motion capturing can be done ai-driven in the brwoser! One model available,
+`blazepose` is even capable of calculating z-axis information, allowing 3D rendering of these skeletons.
+This might be a very nice addition to be used in computer art later down the road, but the precision
+and plausibility of such data is yet to be tested in the field.
 
-Links:
+This app could be modified to either create JSON file from poses captured OR upload such data directly
+to a backend server.
+
+Great potencial to beat other local ai-driven motion capturing systems due to the simple fact it
+needs no installation at all.
+
+### Setup
+
+Following the demo guide will yield a `dist` folder containing the "compiled" application to be
+plugged in elsewhere. This was done in this repository, the main file plugged in was `tflw-pose-detection.js`.
+
+A few hacks later ( see commits ) the pose data created are available for usage in p5js. Mission accomplished!
+
+### Links
 
 - https://github.com/tensorflow/tfjs-models
 - https://github.com/tensorflow/tfjs-models/tree/master/pose-detection/demos#live-camera-demo
+- https://github.com/tensorflow/tfjs-models/tree/master/pose-detection/src/blazepose_tfjs
