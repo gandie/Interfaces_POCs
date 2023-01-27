@@ -14,7 +14,7 @@ increasing during video runtime.
 
 ### Setup
 
-In `assets/data/output_01.json` you'll find the output of a motion capture recording done with XYZ ( @7pc : plz help here! )
+In `assets/data/output_01.json` you'll find the output of a motion capture recording done with https://github.com/microsoft/Azure-Kinect-Samples/tree/master/body-tracking-samples/offline_processor
 
 This can be further processed using `tools/json_tool.py`. Start with `info` mode to check the file and its content:
 
