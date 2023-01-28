@@ -93,3 +93,27 @@ A few hacks later ( see commits ) the pose data created are available for usage 
 - https://github.com/tensorflow/tfjs-models
 - https://github.com/tensorflow/tfjs-models/tree/master/pose-detection/demos#live-camera-demo
 - https://github.com/tensorflow/tfjs-models/tree/master/pose-detection/src/blazepose_tfjs
+
+## Third example - index_tf_upload.html
+
+Basically the same tech as in second example, not live but via local video upload.
+The video is NOT uploaded to any remote server but processed in the local running
+ai-driven engine.
+
+Example can be run in the same way as the second one ( this time `index_tf_upload.html` ),
+remember to add the model string to the local URL in your browser, e.g. `?model=blazepose`.
+
+Unfortunately the output of this is just a `webm` video file when used out of the box.
+Catching the data produced during this process should not be too hard nevertheless.
+
+### Setup
+
+Same setup guide as second example, creating a `dist` folder and copy the output
+into this project, renaming the files and altering `src` link in HTML in the process.
+
+No hacks done so far.
+
+### Links
+
+- https://github.com/tensorflow/tfjs-models
+- https://github.com/tensorflow/tfjs-models/tree/master/pose-detection/demos#upload-a-video-demo
